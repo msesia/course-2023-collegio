@@ -3,7 +3,7 @@
 
 This is a short but intensive course on cutting-edge distribution-free methods for predictive inference using complex machine learning algorithms. This course will cover both the theory and practice of distribution-free predictive inference. Computer-based sessions will focus on hand-on implementations of the described methods using the Python programming language (students will be assumed to have some familiarity with Python), and on applications to real data.
 
-### Schedule
+## Schedule
 
 **Monday, May 8**
 
@@ -40,8 +40,20 @@ This is a short but intensive course on cutting-edge distribution-free methods f
 
 - Computer session 3: Hands-on applications with Python and Jupyter notebooks.
 
+## Software
 
-### References
+The computer sessions of this course will utilize Python and Jupyter notebooks. Students are expected to bring their laptops and have pre-installed both Python (version 3.7+) and Jupyter prior to the beginning of the first computer session (Friday, May 12).
+For new (and experienced) users, it is highly recommended to install Anaconda. Anaconda conveniently installs Python, the Jupyter Notebook, and other data science packages that will be utilized in this course.
+
+Installation instructions: https://docs.jupyter.org/en/latest/install/notebook-classic.html
+
+Anaconda download: https://www.anaconda.com/download 
+
+After you install Python and Jupyter through Anaconda, read the following start-up guide on how to use Jupyter notebooks: https://realpython.com/jupyter-notebook-introduction/
+
+
+
+## Course references
 1. “A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification” https://arxiv.org/abs/2107.07511
 2. “Distribution-Free Predictive Inference For Regression” https://arxiv.org/abs/1604.04173
 3. “Predictive inference with the jackknife+” https://arxiv.org/abs/1905.02928
