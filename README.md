@@ -1,5 +1,5 @@
 # Predictive uncertainty in ML with conformal inference
-
+*May 8-26, 2023, Torino (Italy).*
 
 This is a short but intensive course on cutting-edge distribution-free methods for predictive inference using complex machine learning algorithms. This course will cover both the theory and practice of distribution-free predictive inference. Computer-based sessions will focus on hand-on implementations of the described methods using the Python programming language (students will be assumed to have some familiarity with Python), and on applications to real data.
 
