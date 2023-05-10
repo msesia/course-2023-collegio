@@ -7,24 +7,33 @@ This is a short but intensive course on cutting-edge distribution-free methods f
 
 **Monday, May 8**
 
-1. Introduction to the distribution-free predictive inference framework and review of predictive inference via linear regression.
+0. Introduction and motivation.
+1. Review of parametric predictive inference via linear regression.
 2. Data exchangeability and conformal prediction without explanatory variables.
 3. Split-conformal prediction for regression.
-4. Calibration-conditional validity of conformal predictions.
-5. Conformalized quantile regression.
-6. Conformal prediction for classification.
-7. Label-conditional and group-conditional validity.
-8. Full-conformal prediction.
+4. Conformalized quantile regression.
+
+**Thursday, May 11**
+
+ - Testing for outliers with conformal p-values. (Seminar at Collegio Carlo Alberto)
 
 **Friday, May 12**
 
-- Computer session 1: Hands-on applications with Python and Jupyter notebooks.
-       
+
+Computer session 1a: Hands-on applications with Python and Jupyter notebooks.
+
+5. Conformal prediction for classification.
+6. Label-conditional and group-conditional validity of conformal predictions.
+ 
+Computer session 1b: Hands-on applications with Python and Jupyter notebooks.
+
 **Monday, May 15**
 
+7. Calibration-conditional validity of conformal predictions.
+8. Full conformal prediction.
 9. The jackknife+ and CV+.
 10. Weighted exchangeability and conformal prediction under distribution shift.
-11. Testing for outliers with conformal p-values.
+
 
 **Friday, May 19**
 
@@ -32,9 +41,9 @@ This is a short but intensive course on cutting-edge distribution-free methods f
        
 **Monday, May 22**
 
-12. Distribution-free predictive inference with streaming data.
-13. Extra topics depending on student interest (e.g., connections to causal inference, survival analysis, data sketching, training deep neural networks, etc.).
-14. Discussion of some open research problems.
+11. Distribution-free predictive inference with streaming data.
+12. Extra topics depending on student interest (e.g., connections to causal inference, survival analysis, data sketching, training deep neural networks, etc.).
+13. Discussion of some open research problems.
 
 **Friday, May 26**
 
