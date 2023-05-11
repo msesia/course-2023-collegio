@@ -19,13 +19,11 @@ This is a short but intensive course on cutting-edge distribution-free methods f
 
 **Friday, May 12**
 
-
-Computer session 1a: Hands-on applications with Python and Jupyter notebooks.
+Computer session 1: Hands-on applications with Python and Jupyter notebooks.
 
 5. Conformal prediction for classification.
 6. Label-conditional and group-conditional validity of conformal predictions.
  
-Computer session 1b: Hands-on applications with Python and Jupyter notebooks.
 
 **Monday, May 15**
 
