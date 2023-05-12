@@ -5,6 +5,9 @@ This is a short but intensive course on cutting-edge distribution-free methods f
 
 ## Schedule
 
+Monday classes: 9:15am - 2:00 pm
+Friday classes: 9:15am - 1:00 pm
+
 **Monday, May 8**
 
 0. Introduction and motivation.
