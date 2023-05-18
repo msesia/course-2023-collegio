@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.stats import norm
+from scipy.stats import norm, t
 
 class Model_Reg1:
     def __init__(self, a=0):
@@ -89,8 +89,8 @@ class Model_Reg3:
         n = len(x)
         mu = x
         sigma = self.sigma
-        lower = norm.ppf(alpha/2, loc=mu, scale=sigma)
-        upper = norm.ppf(1.0-alpha/2, loc=mu, scale=sigma)
+        lower = t.ppf(alpha/2, self.df, loc=mu, scale=sigma)
+        upper = t.ppf(1.0-alpha/2, self.df, loc=mu, scale=sigma)
         return lower, upper
 
 class Model_Reg4:
@@ -117,7 +117,7 @@ class Model_Reg4:
         x = X[:,0]
         n = len(x)
         mu = 1 * np.sin(4 * np.pi * x)
-        sigma = np.sqrt(0.25 * ((1.0-self.a) + 10*self.a*x**2))
+        sigma = 0.25 * ((1.0-self.a) + 10*self.a*x**2)
         lower = norm.ppf(alpha/2, loc=mu, scale=sigma)
         upper = norm.ppf(1.0-alpha/2, loc=mu, scale=sigma)
         return lower, upper
