@@ -152,10 +152,9 @@ class Model_Class1:
 
 
 class Model_Class2:
-    def __init__(self, K, p, magnitude=1):
+    def __init__(self, K, p, magnitude=None):
         self.K = K
         self.p = p
-        self.magnitude = magnitude
         
     def sample_X(self, n):
         X = np.random.normal(0, 1, (n,self.p))
