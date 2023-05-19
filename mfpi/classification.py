@@ -13,7 +13,10 @@ class ProbabilityAccumulator:
         self.Z = np.round(self.prob_sort.cumsum(axis=1),9)        
         
     def predict_sets(self, alpha, randomize=False, epsilon=None):
-        L = np.argmax(self.Z >= 1.0-alpha, axis=1).flatten()
+        if alpha>0:
+            L = np.argmax(self.Z >= 1.0-alpha, axis=1).flatten()
+        else:
+            L = (self.Z.shape[1]-1)*np.ones((self.Z.shape[0],)).astype(int)
         if randomize:
             epsilon = np.random.uniform(low=0.0, high=1.0, size=self.n)
         if epsilon is not None:
@@ -65,6 +68,8 @@ def wsc(X, y, S, delta=0.1, M=1000, verbose=False):
                 ai_best = ai
                 bi_best = bi_star
                 cover_min = cover_star
+        if bi_best==len(z_sorted):
+            bi_best = bi_best-1
         return cover_min, z_sorted[ai_best], z_sorted[bi_best]
 
     def sample_sphere(n, p):
