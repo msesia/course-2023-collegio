@@ -59,6 +59,12 @@ Anaconda download: https://www.anaconda.com/download
 
 After you install Python and Jupyter through Anaconda, read the following start-up guide on how to use Jupyter notebooks: https://realpython.com/jupyter-notebook-introduction/
 
+### Additional resources for Python background
+
+This online course material is recommended for students who have some familiarity with programming but want to stregthen their knowledge to Python with the goal of becoming proficient in the scientific computing and data science stack. 
+
+https://web.stanford.edu/class/cme193/index.html
+
 
 
 ## Course references
@@ -75,8 +81,4 @@ After you install Python and Jupyter through Anaconda, read the following start-
 11. “Conformal inference for online prediction with arbitrary distribution shifts” https://arxiv.org/abs/2208.08401
 
 
-## Additional resources for Python background
 
-This online course material is recommended for students who have some familiarity with programming but want to stregthen their knowledge to Python with the goal of becoming proficient in the scientific computing and data science stack. 
-
-https://web.stanford.edu/class/cme193/index.html
