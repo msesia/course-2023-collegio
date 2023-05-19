@@ -73,3 +73,10 @@ After you install Python and Jupyter through Anaconda, read the following start-
 9. “Testing for Outliers with Conformal p-values” https://arxiv.org/abs/2104.08279
 10. “Adaptive conformal inference under distribution shift” https://arxiv.org/abs/2106.00170
 11. “Conformal inference for online prediction with arbitrary distribution shifts” https://arxiv.org/abs/2208.08401
+
+
+## Additional resources for Python background
+
+This online course material is recommended for students who have some familiarity with programming but want to stregthen their knowledge to Python with the goal of becoming proficient in the scientific computing and data science stack. 
+
+https://web.stanford.edu/class/cme193/index.html
