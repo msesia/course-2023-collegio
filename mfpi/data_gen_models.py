@@ -122,6 +122,36 @@ class Model_Reg4:
         upper = norm.ppf(1.0-alpha/2, loc=mu, scale=sigma)
         return lower, upper
     
+class Model_Reg5:
+    def __init__(self, x_shift=0, a=0):
+        self.x_shift = x_shift
+        self.a = a
+
+    def sample_X(self, n):
+        X = self.x_shift + np.abs(np.random.normal(0, 0.5, size=n))
+        X = X.reshape((n,1))
+        return X.astype(np.float32)
+
+    def sample_Y(self, X):
+        x = X[:,0]
+        epsilon = ((1.0-self.a) + 10*self.a*x**2) * np.random.randn(x.shape[0]) 
+        Y =  1 * np.sin(4 * np.pi * x) + 0.25 * epsilon        
+        return Y.astype(np.float32).flatten()
+
+    def sample(self, n):
+        X = self.sample_X(n)
+        Y = self.sample_Y(X)
+        return X, Y
+    
+    def oracle_predict(self, X, alpha):
+        x = X[:,0]
+        n = len(x)
+        mu = 1 * np.sin(4 * np.pi * x)
+        sigma = 0.25 * ((1.0-self.a) + 10*self.a*x**2)
+        lower = norm.ppf(alpha/2, loc=mu, scale=sigma)
+        upper = norm.ppf(1.0-alpha/2, loc=mu, scale=sigma)
+        return lower, upper
+
 class Model_Class1:
     def __init__(self, K, p, magnitude=1):
         self.K = K
