@@ -77,8 +77,7 @@ https://web.stanford.edu/class/cme193/index.html
 7. “Conformal Prediction Under Covariate Shift” https://arxiv.org/abs/1904.06019
 8. “Conformal prediction beyond exchangeability” https://arxiv.org/abs/2202.13415
 9. “Testing for Outliers with Conformal p-values” https://arxiv.org/abs/2104.08279
-10. “Adaptive conformal inference under distribution shift” https://arxiv.org/abs/2106.00170
-11. “Conformal inference for online prediction with arbitrary distribution shifts” https://arxiv.org/abs/2208.08401
+10. “Conformal Inference of Counterfactuals and Individual Treatment Effects" https://arxiv.org/abs/2006.06138
 
 
 
