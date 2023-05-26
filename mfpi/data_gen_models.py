@@ -147,7 +147,7 @@ class Model_Reg5:
         x = X[:,0]
         n = len(x)
         mu = 1 * np.sin(4 * np.pi * x)
-        sigma = 0.25 * ((1.0-self.a) + 10*self.a*x**2)
+        sigma = np.abs(0.25 * ((1.0-self.a) + 10*self.a*x**2))
         lower = norm.ppf(alpha/2, loc=mu, scale=sigma)
         upper = norm.ppf(1.0-alpha/2, loc=mu, scale=sigma)
         return lower, upper
